@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEPHORA | Catálogo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fffafc;
+      color: #382330;
+    }
+
+    .topbar {
+      background: linear-gradient(135deg, #f9dfe9 0%, #efbfd1 50%, #d88bb0 100%);
+      padding: 1rem 0;
+      box-shadow: 0 8px 20px rgba(173, 101, 138, 0.18);
+    }
+
+    .brand {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.6rem;
+    }
+
+    .hero-marca {
+      background: linear-gradient(135deg, #fbe8ef 0%, #f3bfd5 50%, #e69ab6 100%);
+      padding: 4rem 0 3rem;
+      color: #4d2a3a;
+      text-align: center;
+    }
+
+    .hero-marca h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-marca p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .catalogo {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #c75d90;
+      font-weight: 800;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      margin-bottom: 2rem;
+    }
+
+    .btn-nav {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-nav:hover {
+      background: white;
+      color: #c75d90;
+      text-decoration: none;
+    }
+
+    .btn-principal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #c75d90 0%, #e78eb7 100%);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 0.8rem 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-principal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(199, 93, 144, 0.3);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand">✦ Magic Brush</a>
+      <div class="d-flex gap-2">
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="compras.html#productos">Catálogo general</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-marca">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem;">Marca destacada</p>
+      <h1>SEPHORA</h1>
+      <p>Explora una selección glamorosa de belleza con tendencias globales, productos de alto rendimiento y colores que destacan.</p>
+    </div>
+  </header>
+
+  <main class="catalogo">
+    <div class="container">
+      <h2 class="section-title">Catálogo SEPHORA</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/labiales sephora.jpg" alt="Labial Sephora" class="img-producto">
+              <span class="badge-descuento">TOP</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Labial Velvet</h5>
+              <p class="descripcion-producto">Labial mate con intensidad de color, cobertura total y sensación suave y sedosa.</p>
+              <div class="precio-producto">
+                <span class="precio">$58.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/base sephora.webp" alt="Base Sephora" class="img-producto">
+              <span class="badge-descuento">NUEVO</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Base Soft Finish</h5>
+              <p class="descripcion-producto">Base ligera con acabado suave, cobertura uniforme y textura fresca para uso diario.</p>
+              <div class="precio-producto">
+                <span class="precio">$92.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/rubor sephora.jfif" alt="Rubor Sephora" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Rubor Petal</h5>
+              <p class="descripcion-producto">Tonalidad fresca y natural que aporta color suave y brillo saludable al rostro.</p>
+              <div class="precio-producto">
+                <span class="precio">$49.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/iluminador sphora.jfif" alt="Iluminador Sephora" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Iluminador Star</h5>
+              <p class="descripcion-producto">Resaltador con brillo intenso para dar dimensión y luminosidad a tu maquillaje.</p>
+              <div class="precio-producto">
+                <span class="precio">$63.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/delineador sephora.webp" alt="Delineador Sephora" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Delineador Black Art</h5>
+              <p class="descripcion-producto">Línea intensa y precisa para lograr un look elegante, definido y duradero.</p>
+              <div class="precio-producto">
+                <span class="precio">$42.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/pinceles sephora.webp" alt="Pinceles Sephora" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Pinceles Studio</h5>
+              <p class="descripcion-producto">Juego de brochas profesionales con cerdas suaves y precisión para cada técnica.</p>
+              <div class="precio-producto">
+                <span class="precio">$68.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/removedor sephora 1.jfif" alt="Removedor Sephora" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Removedor Gentle</h5>
+              <p class="descripcion-producto">Eliminación efectiva del maquillaje con una fórmula suave y sin irritación.</p>
+              <div class="precio-producto">
+                <span class="precio">$34.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/kit sephora.webp" alt="Kit Sephora" class="img-producto">
+              <span class="badge-descuento">BUNDLE</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Kit Glow Complete</h5>
+              <p class="descripcion-producto">Incluye base, rubor, iluminador, brochas y productos clave para crear un look completo.</p>
+              <div class="precio-producto">
+                <span class="precio">$280.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="compras.html#productos" class="btn-principal">Ver más productos</a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: linear-gradient(135deg, #f9dfe9 0%, #efbfd1 50%, #d88bb0 100%); color: white; padding: 2rem 0; text-align: center;">
+    <div class="container">
+      <p style="margin: 0; font-weight: 600;">SEPHORA © 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

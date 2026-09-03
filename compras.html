@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compras - Magic Brush</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light py-3" style="background: linear-gradient(135deg, #ffb6c9 0%, #ff8fb1 50%, #ff6f9f 100%);">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="index.html">✦ Magic Brush</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <div class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <a class="nav-link text-white" href="index.html">Inicio</a>
+          <a class="btn btn-light btn-sm text-pink" href="compras.html#productos">Productos</a>
+          <a class="nav-link text-white" href="pagina2.html">Más información</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO DE LA PÁGINA -->
+  <section style="background: linear-gradient(135deg, #ffb6c9 0%, #ff8fb1 50%, #ff6f9f 100%); padding: 3rem 0; text-align: center; color: white;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem;">� Nuestras Compras</h1>
+      <p style="font-size: 1.2rem; opacity: 0.95;">Explora nuestra variedad de productos de maquillaje profesional de calidad</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PRODUCTOS -->
+  <section id="productos" class="container py-5">
+    <h2 class="text-center mb-2 fw-bold" style="color: #d44b80; font-size: 2.5rem;">Catálogo de Productos</h2>
+    <p class="text-center mb-5 lead" style="color: #666;">Selecciona los productos que te interesan</p>
+    
+    <div class="row g-4">
+      <!-- PRODUCTO 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/pinceles de maquillaje.jfif" alt="Pinceles de Maquillaje" class="img-producto">
+            <span class="badge-descuento">DESTACADO</span>
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Pinceles de Maquillaje</h5>
+            <p class="descripcion-producto">Set de 15 pinceles profesionales con cerdas suaves para un acabado impecable.</p>
+            <div class="precio-producto">
+              <span class="precio">$45.00</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Pinceles de Maquillaje', '$45.00')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/acuarelas.jpg" alt="Paleta de Sombras" class="img-producto">
+            <span class="badge-descuento">NUEVO</span>
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Paleta de Sombras 48</h5>
+            <p class="descripcion-producto">Paleta profesional con 48 colores vibrantes para looks infinitos.</p>
+            <div class="precio-producto">
+              <span class="precio">$12.000</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Paleta de Sombras 48', '$32.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/BASE-04.webp" alt="Base de Maquillaje" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Base Profesional</h5>
+            <p class="descripcion-producto">Base de maquillaje de larga duración con cobertura total y acabado natural.</p>
+            <div class="precio-producto">
+              <span class="precio">$28.50</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Base Profesional', '$28.50')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/labiales.jfif" alt="Labiales Profesionales" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Labiales Profesionales</h5>
+            <p class="descripcion-producto">Set de 12 labiales con colores intensos, acabado mate y larga duración.</p>
+            <div class="precio-producto">
+              <span class="precio">$65.00</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Labiales Profesionales', '$65.00')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/delineador precision.jfif" alt="Delineador Profesional" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Delineadores Precisión</h5>
+            <p class="descripcion-producto">6 delineadores con punta ultra precisa para líneas perfectas y duraderas.</p>
+            <div class="precio-producto">
+              <span class="precio">$22.900</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Delineadores Precisión', '$22.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">00a86e0a37?w=500&h=500&fit=crop
+            <img src="./imagenes/kit maquillaje.jpg" alt="Kit Completo de Maquillaje" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Kit Completo Iniciante</h5>
+            <p class="descripcion-producto">Todo lo que necesitas para comenzar: pinceles, paletas, bases y labiales.</p>
+            <div class="precio-producto">
+              <span class="precio">$9.000</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Kit Completo Iniciante', '$89.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 7 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/corrector ojeras.webp" alt="Corrector de Ojeras" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Corrector de Ojeras</h5>
+            <p class="descripcion-producto">Corrector profesional con cobertura máxima para iluminar la zona de los ojos.</p>
+            <div class="precio-producto">
+              <span class="precio">$23.000</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Corrector de Ojeras', '$18.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 8 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/rubor.jfif" alt="Rubor Profesional" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Rubor Profesional</h5>
+            <p class="descripcion-producto">Set de 6 rubores con tonos naturales y acabado sedoso.</p>
+            <div class="precio-producto">
+              <span class="precio">$26.500</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Rubor Profesional', '$24.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 9 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/bronceador.webp" alt="Bronceador" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Bronceador Luxe</h5>
+            <p class="descripcion-producto">Bronceador prensado con 4 tonos para un bronceado natural y duradero.</p>
+            <div class="precio-producto">
+              <span class="precio">$32.500</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Bronceador Luxe', '$29.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 10 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/iluminador.jfif" alt="Iluminador" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Iluminador Brillante</h5>
+            <p class="descripcion-producto">Highlighter con efecto luminoso para resaltar los puntos de luz del rostro.</p>
+            <div class="precio-producto">
+              <span class="precio">$21.900</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Iluminador Brillante', '$21.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 11 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/fijador.webp" alt="Spray Fijador" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Spray Fijador 24H</h5>
+            <p class="descripcion-producto">Spray fijador profesional que mantiene el maquillaje perfecto 24 horas.</p>
+            <div class="precio-producto">
+              <span class="precio">$15.99</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Spray Fijador 24H', '$15.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 12 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-producto">
+          <div class="imagen-producto">
+            <img src="./imagenes/removedor.jfif" alt="Removedor de Maquillaje" class="img-producto">
+          </div>
+          <div class="card-body-producto">
+            <h5 class="nombre-producto">Removedor Premium</h5>
+            <p class="descripcion-producto">Removedor de maquillaje suave con ingredientes naturales e hidratantes.</p>
+            <div class="precio-producto">
+              <span class="precio">$16.99</span>
+            </div>
+            <button class="btn-seleccionar" onclick="agregarProducto('Removedor Premium', '$16.99')">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- PIE DE PÁGINA -->
+  <footer style="background: linear-gradient(135deg, #ffb6c9 0%, #ff8fb1 50%, #ff6f9f 100%); color: white; padding: 3rem 0; margin-top: 3rem; text-align: center;">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem;">✦ Magic Brush © 2026</p>
+      <p style="margin-bottom: 0; opacity: 0.9;">Tus productos artísticos de confianza</p>
+      <div style="margin-top: 1rem;">
+        <a href="index.html" class="text-white me-3" style="text-decoration: none;">Inicio</a>
+        <a href="pagina2.html" class="text-white" style="text-decoration: none;">Más información</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATENEA | Catálogo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fffafc;
+      color: #382330;
+    }
+
+    .topbar {
+      background: linear-gradient(135deg, #f7e5c8 0%, #f0d2a4 50%, #d8a766 100%);
+      padding: 1rem 0;
+      box-shadow: 0 8px 20px rgba(171, 119, 63, 0.18);
+    }
+
+    .brand {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.6rem;
+    }
+
+    .hero-marca {
+      background: linear-gradient(135deg, #f9efd8 0%, #f6d6a6 50%, #e1ab5e 100%);
+      padding: 4rem 0 3rem;
+      color: #4d2a3a;
+      text-align: center;
+    }
+
+    .hero-marca h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-marca p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .catalogo {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #ae7b2d;
+      font-weight: 800;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      margin-bottom: 2rem;
+    }
+
+    .btn-nav {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-nav:hover {
+      background: white;
+      color: #ae7b2d;
+      text-decoration: none;
+    }
+
+    .btn-principal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ae7b2d 0%, #d7a95a 100%);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 0.8rem 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-principal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(174, 123, 45, 0.3);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand">✦ Magic Brush</a>
+      <div class="d-flex gap-2">
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="compras.html#productos">Catálogo general</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-marca">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem;">Marca destacada</p>
+      <h1>ATENEA</h1>
+      <p>Luxurious essentials with elegant finishes, premium textures, and products designed for refined beauty and confidence.</p>
+    </div>
+  </header>
+
+  <main class="catalogo">
+    <div class="container">
+      <h2 class="section-title">Catálogo ATENEA</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/labiales atenea.jpg" alt="Labial Atenea" class="img-producto">
+              <span class="badge-descuento">TOP</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Labial Royal</h5>
+              <p class="descripcion-producto">Color intenso, acabado sofisticado y fórmula hidratante para un look elegante y duradero.</p>
+              <div class="precio-producto">
+                <span class="precio">$57.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/base atenea.webp" alt="Base Atenea" class="img-producto">
+              <span class="badge-descuento">NUEVO</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Base Velvet</h5>
+              <p class="descripcion-producto">Capa uniforme, efecto liso y acabado premium para una piel impecable todo el día.</p>
+              <div class="precio-producto">
+                <span class="precio">$76.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/rubor atenea.jfif" alt="Rubor Atenea" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Rubor Queen</h5>
+              <p class="descripcion-producto">Tono elegante con un brillo natural para un rostro radiante y equilibrado.</p>
+              <div class="precio-producto">
+                <span class="precio">$45.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/iluminador atenea.jpg" alt="Iluminador Atenea" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Iluminador Gold</h5>
+              <p class="descripcion-producto">Reflejos suaves y luminosos para destacar la estructura facial con elegancia.</p>
+              <div class="precio-producto">
+                <span class="precio">$32.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/delineador atenea.webp" alt="Delineador Atenea" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Delineador Aurea</h5>
+              <p class="descripcion-producto">Línea precisa y sofisticada para un detalle final elegante y duradero.</p>
+              <div class="precio-producto">
+                <span class="precio">$23.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/pinceles atenea.webp" alt="Pinceles Atenea" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Pinceles Prestige</h5>
+              <p class="descripcion-producto">Set premium de brochas para una aplicación fina, suave y profesional.</p>
+              <div class="precio-producto">
+                <span class="precio">$65.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/removedor atenea.jfif" alt="Removedor Atenea" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Removedor Pure</h5>
+              <p class="descripcion-producto">Elimina maquillaje con suavidad y deja la piel fresca, limpia y confortable.</p>
+              <div class="precio-producto">
+                <span class="precio">$36.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/kit atenea.webp" alt="Kit Atenea" class="img-producto">
+              <span class="badge-descuento">BUNDLE</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Kit Grand Luxe</h5>
+              <p class="descripcion-producto">Incluye base, rubor, iluminador y herramientas premium para looks refinados.</p>
+              <div class="precio-producto">
+                <span class="precio">$190.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="compras.html#productos" class="btn-principal">Ver más productos</a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: linear-gradient(135deg, #f7e5c8 0%, #f0d2a4 50%, #d8a766 100%); color: white; padding: 2rem 0; text-align: center;">
+    <div class="container">
+      <p style="margin: 0; font-weight: 600;">ATENEA © 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

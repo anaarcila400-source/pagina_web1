@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOOMSHELL | Catálogo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fffafc;
+      color: #382330;
+    }
+
+    .topbar {
+      background: linear-gradient(135deg, #f3d9e7 0%, #e9bfd4 50%, #dca2bd 100%);
+      padding: 1rem 0;
+      box-shadow: 0 8px 20px rgba(169, 102, 136, 0.18);
+    }
+
+    .brand {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.6rem;
+    }
+
+    .hero-marca {
+      background: linear-gradient(135deg, #f7dfea 0%, #f0c2d8 50%, #e191b2 100%);
+      padding: 4rem 0 3rem;
+      color: #4d2a3a;
+      text-align: center;
+    }
+
+    .hero-marca h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-marca p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .catalogo {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #b95a7c;
+      font-weight: 800;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      margin-bottom: 2rem;
+    }
+
+    .btn-nav {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 999px;
+      padding: 0.55rem 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-nav:hover {
+      background: white;
+      color: #b95a7c;
+      text-decoration: none;
+    }
+
+    .btn-principal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #b95a7c 0%, #dc8fae 100%);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 0.8rem 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-principal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(185, 90, 124, 0.3);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand">✦ Magic Brush</a>
+      <div class="d-flex gap-2">
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="compras.html#productos">Catálogo general</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-marca">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem;">Marca destacada</p>
+      <h1>BLOOMSHELL</h1>
+      <p>Una línea inspirada en la delicadeza floral, con looks suaves, elegantes y con tonos que realzan la belleza natural.</p>
+    </div>
+  </header>
+
+  <main class="catalogo">
+    <div class="container">
+      <h2 class="section-title">Catálogo BLOOMSHELL</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/labiales bloomshell.jpg" alt="Labial Bloomshell" class="img-producto">
+              <span class="badge-descuento">TOP</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Labial Rose Bloom</h5>
+              <p class="descripcion-producto">Tonalidad floral con acabado sedoso y hidratación para un look romántico y sofisticado.</p>
+              <div class="precio-producto">
+                <span class="precio">$50.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/base bloomshell.jfif" alt="Base Bloomshell" class="img-producto">
+              <span class="badge-descuento">NUEVO</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Base Petal Glow</h5>
+              <p class="descripcion-producto">Cobertura ligera con un acabado luminoso y natural perfecto para looks suaves y frescos.</p>
+              <div class="precio-producto">
+                <span class="precio">$68.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/rubor bloomshell.jfif" alt="Rubor Bloomshell" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Rubor Blossom</h5>
+              <p class="descripcion-producto">Tonalidad delicada para un brillo natural y saludable en cada look.</p>
+              <div class="precio-producto">
+                <span class="precio">$45.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/iluminador bloomshell.jfif" alt="Iluminador Bloomshell" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Iluminador Dew</h5>
+              <p class="descripcion-producto">Brillo suave y radiante para resaltar cada detalle con armonía y delicadeza.</p>
+              <div class="precio-producto">
+                <span class="precio">$52.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/delineador bloomshell.webp" alt="Delineador Bloomshell" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Delineador Flora</h5>
+              <p class="descripcion-producto">Línea precisa y elegante para looks femeninos y sofisticados con mucha definición.</p>
+              <div class="precio-producto">
+                <span class="precio">$40.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/pinceles bloomshell.jfif" alt="Pinceles Bloomshell" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Pinceles Flora</h5>
+              <p class="descripcion-producto">Brochas suaves y versátiles para una aplicación uniforme y estética impecable.</p>
+              <div class="precio-producto">
+                <span class="precio">$59.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/removedor bloomshell.webp" alt="Removedor Bloomshell" class="img-producto">
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Removedor Soft</h5>
+              <p class="descripcion-producto">Fórmula efectiva para retirar maquillaje con suavidad y mantequilidad.</p>
+              <div class="precio-producto">
+                <span class="precio">$32.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card-producto">
+            <div class="imagen-producto">
+              <img src="./imagenes/kit bloomshell.jfif" alt="Kit Bloomshell" class="img-producto">
+              <span class="badge-descuento">BUNDLE</span>
+            </div>
+            <div class="card-body-producto">
+              <h5 class="nombre-producto">Kit Floral Beauty</h5>
+              <p class="descripcion-producto">Combo intocado para crear looks delicados con base, rubor, iluminador y brochas.</p>
+              <div class="precio-producto">
+                <span class="precio">$150.00</span>
+              </div>
+              <button class="btn-seleccionar">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="compras.html#productos" class="btn-principal">Ver más productos</a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: linear-gradient(135deg, #f3d9e7 0%, #e9bfd4 50%, #dca2bd 100%); color: white; padding: 2rem 0; text-align: center;">
+    <div class="container">
+      <p style="margin: 0; font-weight: 600;">BLOOMSHELL © 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
