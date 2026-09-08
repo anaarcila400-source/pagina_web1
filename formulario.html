@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de compra | Magic Brush</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="formulario-pagina">
+  <header class="formulario-nav py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold text-white" href="index.html">✦ Magic Brush</a>
+      <a class="btn btn-outline-light btn-sm" href="index.html">Inicio</a>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="formulario-encabezado text-center text-white mb-4">
+      <h1 class="fw-bold">Formulario de compra</h1>
+      <p>Completa tus datos para registrar tu pedido.</p>
+    </div>
+
+    <form class="formulario-compra" action="datos.php" method="post">
+      <h2>Datos personales</h2>
+      <div class="row g-3">
+        <div class="col-md-6"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" required></div>
+        <div class="col-md-6"><label for="apellido">Apellido</label><input type="text" id="apellido" name="apellido" required></div>
+        <div class="col-md-6"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" required></div>
+        <div class="col-md-6"><label for="correo">Correo electrónico</label><input type="email" id="correo" name="correo" required></div>
+        <div class="col-md-4"><label for="edad">Edad</label><input type="number" id="edad" name="edad" min="1" max="120" required></div>
+        <div class="col-md-4"><label for="sexo">Sexo</label><select id="sexo" name="sexo" required><option value="">Selecciona</option><option>Femenino</option><option>Masculino</option><option>Prefiero no decirlo</option></select></div>
+        <div class="col-md-4"><label for="tipo_de_piel">Tipo de piel</label><select id="tipo_de_piel" name="tipo_de_piel" required><option value="">Selecciona</option><option>Normal</option><option>Seca</option><option>Mixta</option><option>Grasa</option><option>Sensible</option></select></div>
+        <div class="col-12"><label for="direccion">Dirección</label><input type="text" id="direccion" name="direccion" required></div>
+      </div>
+
+      <h2 class="mt-4">Datos de la compra</h2>
+      <div class="row g-3">
+        <div class="col-md-8"><label for="producto">Producto</label><select id="producto" name="producto" required><option value="">Selecciona un producto</option><option>Pinceles de maquillaje</option><option>Paleta de Sombras 48</option><option>Base Profesional</option><option>Labiales Profesionales</option><option>Delineadores Precisión</option><option>Kit Completo Iniciante</option><option>Corrector de Ojeras</option><option>Rubor Profesional</option><option>Bronceador Luxe</option><option>Iluminador Brillante</option><option>Spray Fijador 24H</option><option>Removedor Premium</option></select></div>
+        <div class="col-md-4"><label for="cantidad">Cantidad</label><input type="number" id="cantidad" name="cantidad" min="1" value="1" required></div>
+        <div class="col-12"><label for="metodo_de_pago">Método de pago</label><select id="metodo_de_pago" name="metodo_de_pago" required><option value="">Selecciona un método</option><option>Tarjeta débito o crédito</option><option>Transferencia bancaria</option><option>Pago contra entrega</option></select></div>
+      </div>
+
+      <button type="submit" class="btn-seleccionar mt-4">Enviar pedido</button>
+ 
+        <body class="formulario-pagina">
+        <main class="container py-5">
+        <div class="confirmacion-compra text-center">
+        <div class="confirmacion-icono">✓</div>
+        <h1>¡Pedido recibido!</h1>
+        <p>Gracias, <?php echo htmlspecialchars($datos['nombre'], ENT_QUOTES, 'UTF-8'); ?>. Tu pedido de <strong><?php echo htmlspecialchars($datos['producto'], ENT_QUOTES, 'UTF-8'); ?></strong> fue guardado correctamente.</p>
+        <a href="index.html" class="btn-seleccionar d-inline-block text-decoration-none">Volver al inicio</a>
+    </div>
+  </main>
+</body>
+</html>
+
+    </form>
+  </main>
+</body>
+</html>
