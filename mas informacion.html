@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información y compra - Magic Brush</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light py-3" style="background: linear-gradient(135deg, #ffb6c9 0%, #ff8fb1 50%, #ff6f9f 100%);">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">✦ Magic Brush</a>
+            <a class="btn btn-light btn-sm text-pink" href="formulario.html">Formulario</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="info-hero">
+            <div class="container info-hero-contenido">
+                <div>
+                    <span class="formulario-etiqueta">✦ MAGic brush</span>
+                    <h1>Tu belleza,<br><em>tu estilo.</em></h1>
+                    <p>Encuentra tus favoritos y déjanos preparar una experiencia pensada para ti.</p>
+                </div>
+                <div class="hero-sello">♡<span>COMPRA<br>CON ESTILO</span></div>
+            </div>
+        </section>
+
+        <section class="formulario-seccion formulario-pagina" id="formulario-compra">
+            <div class="container">
+                <div class="formulario-encabezado">
+                    <span class="formulario-etiqueta">Paso 01 · Personaliza tu pedido</span>
+                    <h2>Cuéntanos sobre ti</h2>
+                    <p>Completa la información y nos pondremos en contacto contigo.</p>
+                </div>
+
+                <div class="formulario-layout formulario-solo">
+                    <form class="formulario-compra" method="post" action="datos.php">
+                        <div class="formulario-bloque">
+                            <div class="bloque-titulo"><span>01</span><h3>Datos personales</h3></div>
+                            <div class="formulario-campos">
+                                <div class="campo-formulario"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" required></div>
+                                <div class="campo-formulario"><label for="apellido">Apellido</label><input type="text" id="apellido" name="apellido" required></div>
+                                <div class="campo-formulario"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" required></div>
+                                <div class="campo-formulario"><label for="correo">Correo electrónico</label><input type="email" id="correo" name="correo" required></div>
+                                <div class="campo-formulario"><label for="edad">Edad</label><input type="number" id="edad" name="edad" min="1" max="120" required></div>
+                                <div class="campo-formulario"><label for="sexo">Sexo</label><select id="sexo" name="sexo" required><option value="">Selecciona una opción</option><option>Femenino</option><option>Masculino</option><option>Prefiero no decirlo</option></select></div>
+                                <div class="campo-formulario"><label for="direccion">Dirección de entrega</label><input type="text" id="direccion" name="direccion" required></div>
+                                <div class="campo-formulario"><label for="tipo_de_piel">Tipo de piel</label><select id="tipo_de_piel" name="tipo_de_piel" required><option value="">Selecciona una opción</option><option>Normal</option><option>Seca</option><option>Grasa</option><option>Mixta</option><option>Sensible</option></select></div>
+                            </div>
+                        </div>
+
+                        <div class="formulario-bloque">
+                            <div class="bloque-titulo"><span>02</span><h3>Datos de la compra</h3></div>
+                            <div class="formulario-campos">
+                                <div class="campo-formulario"><label for="producto">Producto</label><select id="producto" name="producto" required><option value="">Selecciona un producto</option><option>Pinceles de maquillaje</option><option>Labiales profesionales</option><option>Delineadores precisión</option><option>Rubor profesional</option><option>Iluminador brillante</option><option>Kit completo de maquillaje</option></select></div>
+                                <div class="campo-formulario"><label for="cantidad">Cantidad</label><input type="number" id="cantidad" name="cantidad" min="1" max="20" value="1" required></div>
+                                <div class="campo-formulario"><label for="metodo_de_pago">Método de pago</label><select id="metodo_de_pago" name="metodo_de_pago" required><option value="">Selecciona un método</option><option>Tarjeta débito o crédito</option><option>Transferencia bancaria</option><option>Pago contra entrega</option></select></div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-enviar-formulario">Enviar mi pedido <span>→</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
